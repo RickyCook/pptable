@@ -54,6 +54,3 @@ def pptable(table):
     pprow(col_indexes, col_width)
     for row in table:
         pprow(row, col_width)
-
-pptable(url_levels(APP_URLS))
-    
