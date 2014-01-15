@@ -1,7 +1,3 @@
-"""
-Util to pretty print a table of values
-"""
-
 def getindex(lst, idx, default=None):
     """
     Get index from list, or default
@@ -16,7 +12,7 @@ def pprow(row, widths):
     Print a table row, padding columns where necessary
     """
     print "| " + " | ".join(
-        "{:{}}".format(col_val, col_width[col_idx])
+        "{:{}}".format(col_val, widths[col_idx])
         for col_idx, col_val
         in enumerate(row)
     ) + " |"
