@@ -7,7 +7,7 @@ def getindex(lst, idx, default=None):
     except IndexError:
         return default
 
-def print_row(row, widths):
+def pprow(row, widths):
     """
     Print a table row, padding columns where necessary
     """
@@ -17,11 +17,11 @@ def print_row(row, widths):
         in enumerate(row)
     ) + " |"
 
-def print_table(table):
+def pptable(table):
     """
     Print a formatted table
 
-    print_table([
+    pptable([
         ('a', 'b', 'c'),
         ('aa', 'bb', 'cc'),
     ])
@@ -47,6 +47,9 @@ def print_table(table):
                  ]
 
     # Print header, data
-    print_row(col_indexes, col_width)
+    pprow(col_indexes, col_width)
     for row in table:
-        print_row(row, col_width)
+        pprow(row, col_width)
+
+pptable(url_levels(APP_URLS))
+    
