@@ -1,3 +1,7 @@
+"""
+Util to pretty print a table of values
+"""
+
 def getindex(lst, idx, default=None):
     """
     Get index from list, or default
