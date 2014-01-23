@@ -3,10 +3,12 @@ pptable
 
 Pretty print a table of data
 
-    pptable([
-        ('a', 'b', 'c'),
-        ('aa', 'bb', 'cc'),
-    ])
+```python
+pptable([
+    ('a', 'b', 'c'),
+    ('aa', 'bb', 'cc'),
+])
+```
 
 Will output:
 
