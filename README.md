@@ -6,12 +6,12 @@ Pretty print a table of data
 ```python
 pptable([
     ('a', 'b', 'c'),
-    ('aa', 'bb', 'cc'),
+    ('fu', 'bar', 'baz'),
 ])
 ```
 
 Will output:
 
-    | 0  | 1  | 2  |
-    | a  | b  | c  |
-    | aa | bb | cc |
+    | 0  | 1   | 2   |
+    | a  | b   | c   |
+    | fu | bar | baz |
